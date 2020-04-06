@@ -14,8 +14,11 @@ a {
 	display:block;
 	clear:both;
 }
-
+header,nav,h2,main-visual,footer {
+	font-family: Chalkduster,"Bradley Hand",Courier,"Segoe Print",sans-serif;
+}
 header {
+	position: relative;
 	width: 90%
 	padding: 15px 0;
 	margin: 0 auto;
@@ -25,9 +28,18 @@ header {
 header.headline {
 	font-size: 32px;
 }
+.social {
+	position: absolute;
+	top: 22px;
+	right: 22px;
+}
+.social i {
+	display: inline-block;
+	margin-left: 20px;
+}
 .nav-list {
 	text-align: center;
-	padding: 10px;
+	padding: 10px 0;
 	margin: 0 auto;
 }
 .nav-list-item {
@@ -84,18 +96,19 @@ main {
 }
 .blog-image {
 	float: left;
-	height: 180px
+	height: 180px;
+	width: 270px;
 }
 .blog-text-headline {
 	padding-bottom: 15px;
 }
 .blog-text {
+	float: left;
 	padding: 30px 0 0 25px;
 }
 .blog-date {
 	display: inline-block;
 	font-size: 12px;
-
 }
 
 .category {
@@ -105,6 +118,20 @@ main {
 	border-radius: 3px;
 	color: #fff;
 	font-size: 11px;
+}
+.pagination {
+	text-align: center;
+	padding-top: 50px
+}
+.pagination p {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+	color: #fff;
+	background-color: #acabab;
+	border-radius: 3px;
+	line-height: 30px;
 }
 .sidebar {
 	width: 230px;
